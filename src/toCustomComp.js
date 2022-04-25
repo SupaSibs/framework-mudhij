@@ -20,7 +20,7 @@ constructor() {super()}
 
 connectedCallBack() {
 this.innerHTML = template;
-for(let styles in style) }
+for(let styles in style) {
 this.style[styles] = style[styles]
 }
 
