@@ -2,8 +2,8 @@ function createType(name, type) {
  return type 
 }
 
-function checkType(var, type) {
-if (typeof var !== type) {
+function checkType(variable, type) {
+if (typeof variable !== type) {
 console.log("Types dont match");
 throw new Error("Type is wrong")
 }
