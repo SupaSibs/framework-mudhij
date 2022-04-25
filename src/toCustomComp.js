@@ -1,20 +1,14 @@
-function createType(name, type) {
- return type 
-}
 
-function checkType(variable, type) {
-if (typeof variable !== type) {
-console.log("Types dont match");
-throw new Error("Type is wrong")
-}
-}
+ 
+
+
+
+
+
 
 function toComp(template, style, state, hooks, attrs) {
-checkType(template, "string")
-checkType(style, "object")
-checkType(state,"object")
-checkType(hooks,"object")
-checkType(attrs, "object")
+
+ 
 class Element extends HTMLElement {
 constructor() {super()}
 
@@ -40,3 +34,21 @@ this[attr] = attrs[attr]
 
 return Element
 }
+
+
+const element = {
+state: {
+message: `Hello World`
+},
+template: `<p> ${this.dataset} </p>`,
+style: {
+color: "red"
+},
+hooks: {
+onClick: () => alert("Hi!")
+},
+attrs: {},
+element: toComp(this.template, this.style, this.state, this.hooks, this.attrs)
+}
+
+customElements.define("my-element", element.element)
