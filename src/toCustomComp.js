@@ -1,18 +1,11 @@
 
- 
-
-
-
-
-
-
 function toComp(template, style, state, hooks, attrs) {
 
  
 class Element extends HTMLElement {
 constructor() {super()}
 
-connectedCallBack() {
+connectedCallback() {
 this.innerHTML = template;
 for(let styles in style) {
 this.style[styles] = style[styles]
