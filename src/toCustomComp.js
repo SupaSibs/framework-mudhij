@@ -27,21 +27,3 @@ this[attr] = attrs[attr]
 
 return Element
 }
-
-
-const element = {
-state: {
-message: `Hello World`
-},
-template: `<p> ${this.dataset} </p>`,
-style: {
-color: "red"
-},
-hooks: {
-onClick: () => alert("Hi!")
-},
-attrs: {},
-element: toComp(this.template, this.style, this.state, this.hooks, this.attrs)
-}
-
-customElements.define("my-element", element.element)
