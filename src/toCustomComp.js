@@ -32,7 +32,7 @@ export default toComp
 /* EXAMPLE ELEMENT:
 const ele = {
 state: {
-msg: "Hsdi"
+msg: "hi"
 },
 get template() {
 return "<p>" + this.state.msg + "</p>"
