@@ -25,7 +25,7 @@ this[attr] = attrs[attr]
 }
 }
 }
-
+export default toComp
 return Element
 }
 
