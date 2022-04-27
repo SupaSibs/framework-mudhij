@@ -25,10 +25,10 @@ this[attr] = attrs[attr]
 }
 }
 }
-export default toComp
+
 return Element
 }
-
+export default toComp
 /* EXAMPLE ELEMENT:
 const ele = {
 state: {
